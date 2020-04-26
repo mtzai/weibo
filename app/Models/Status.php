@@ -6,8 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Status extends Model
 {
-    public function statuses()
+    public function user()
     {
-        return $this->hasMany(Status::class);
+        return $this->belongsTo(User::class);
     }
 }
